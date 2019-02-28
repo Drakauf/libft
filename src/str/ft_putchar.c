@@ -1,17 +1,22 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   str.h                                            .::    .:/ .      .::   */
+/*   ft_putchar.c                                     .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/02/25 13:11:49 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/02/28 16:50:50 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Created: 2019/02/28 16:44:12 by shthevak     #+#   ##    ##    #+#       */
+/*   Updated: 2019/02/28 16:59:17 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "unistd.h"
+#include "str.h"
 
-void	ft_putchar(char c);
-void	ft_putstr(const char *str);
+void	ft_putchar(char c)
+{
+	unsigned char	u;
+
+	u = c;
+	write(1, &(u), 1);
+}

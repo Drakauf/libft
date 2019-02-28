@@ -1,17 +1,29 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   str.h                                            .::    .:/ .      .::   */
+/*   main_str.c                                       .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/02/25 13:11:49 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/02/28 16:50:50 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Created: 2019/02/28 16:48:18 by shthevak     #+#   ##    ##    #+#       */
+/*   Updated: 2019/02/28 17:15:15 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "unistd.h"
+#include "str.h"
 
-void	ft_putchar(char c);
-void	ft_putstr(const char *str);
+int main(int i, char **j)
+{
+	/******************/
+	ft_putchar('\n');
+	ft_putchar('0');
+	ft_putchar(0);
+	ft_putchar(-159);
+	/*****************/
+	ft_putstr("\n");
+	ft_putstr("");
+	ft_putstr("HELLO WORLD !");
+	/*****************/
+	return (0);
+}

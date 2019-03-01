@@ -1,22 +1,31 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_putstr.c                                      .::    .:/ .      .::   */
+/*   ft_strdup.c                                      .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/02/28 16:45:28 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/01 18:50:12 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Created: 2019/03/01 18:51:28 by shthevak     #+#   ##    ##    #+#       */
+/*   Updated: 2019/03/01 19:03:09 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "str.h"
 
-void	ft_putstr(const char *str)
+char	*ft_strdup(char *str)
 {
+	char	*ret;
+	int		i;
 
-	if (!str)
-		return ;
-	write(1, str, ft_strlen(str) + 1);
+	if (!(ret = malloc(sizeof(char) * (ft_strlen(str) + 1))))
+		return (NULL);
+	i = 0;
+	while (str[i])
+	{
+		ret[i] = str[i];
+		i++;
+	}
+	ret[i] = '\0';
+	return (ret);
 }

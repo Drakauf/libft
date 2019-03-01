@@ -1,22 +1,25 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_putstr.c                                      .::    .:/ .      .::   */
+/*   ft_strlen.c                                      .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/02/28 16:45:28 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/01 18:50:12 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Created: 2019/03/01 14:09:59 by shthevak     #+#   ##    ##    #+#       */
+/*   Updated: 2019/03/01 18:50:24 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "str.h"
 
-void	ft_putstr(const char *str)
+int	ft_strlen(const char *str)
 {
 
-	if (!str)
-		return ;
-	write(1, str, ft_strlen(str) + 1);
+	const char *s;
+
+	s = str;
+	while (*s)
+		s++;
+	return (s - str);
 }

@@ -6,7 +6,7 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/02/28 16:48:18 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/02/28 17:15:15 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/01 19:10:15 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -25,5 +25,27 @@ int main(int i, char **j)
 	ft_putstr("");
 	ft_putstr("HELLO WORLD !");
 	/*****************/
+	printf("%d\n", ft_strlen("test"));
+	printf("%d\n", ft_strlen(""));
+	printf("%d\n", ft_strlen("5test"));
+	printf("%d\n", ft_strlen("test44"));
+	printf("%d\n", ft_strlen("t"));
+	/*****************/
+	char	*s;
+	s = ft_strdup("test");
+	printf("%s\n", s);
+	free(s);
+	printf("%s\n", s);
+
+	s = ft_strdup("");
+	printf("%s\n", s);
+	free(s);
+	printf("%s\n", s);
+
+	s = ft_strdup("test");
+	printf("%s\n", s);
+	ft_strdel(&s);
+	printf("%s\n", s);
+
 	return (0);
 }

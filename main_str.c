@@ -6,7 +6,7 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/02/28 16:48:18 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/01 19:10:15 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/02 12:08:53 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -46,6 +46,19 @@ int main(int i, char **j)
 	printf("%s\n", s);
 	ft_strdel(&s);
 	printf("%s\n", s);
+
+	/*****************/
+	s = ft_strjoin("It", " Works !");
+	printf("%s\n", s);
+	ft_strdel(&s);
+	printf("%s\n", s);
+
+	s = ft_strdup("test");
+	ft_strjoinfree(&s, "Working");
+	printf("%s\n", s);
+	ft_strdel(&s);
+	printf("%s\n", s);
+
 
 	return (0);
 }

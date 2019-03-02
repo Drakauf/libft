@@ -1,24 +1,29 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   str.h                                            .::    .:/ .      .::   */
+/*   ft_strcat.c                                      .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/02/25 13:11:49 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/02 12:10:51 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Created: 2019/03/02 11:08:51 by shthevak     #+#   ##    ##    #+#       */
+/*   Updated: 2019/03/02 11:11:18 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "unistd.h"
-#include "stdlib.h"
+#include "str.h"
 
-void	ft_putchar(char c);
-void	ft_putstr(const char *str);
-int		ft_strlen(const char *str);
-char	*ft_strdup(char *str);
-void	ft_strdel(char **str);
-char	*ft_strjoin(const char *s1, const char *s2);
-char	*ft_strcat(char *dest, char *src);
-void	ft_strjoinfree(char **s1, const char *s2);
+char	*ft_strcat(char *dest, char *str)
+{
+	int	i;
+	int j;
+
+	i = 0;
+	j = 0;
+	while (dest[i])
+		i++;
+	while (str[j])
+		dest[i++] = str[j++];
+	dest[i] = '\0';
+	return (dest);
+}

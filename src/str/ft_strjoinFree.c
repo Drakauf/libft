@@ -1,24 +1,30 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   str.h                                            .::    .:/ .      .::   */
+/*   ft_strjoinFree.c                                 .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/02/25 13:11:49 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/02 12:10:51 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Created: 2019/03/02 11:16:43 by shthevak     #+#   ##    ##    #+#       */
+/*   Updated: 2019/03/02 12:20:43 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "unistd.h"
-#include "stdlib.h"
+#include "str.h"
 
-void	ft_putchar(char c);
-void	ft_putstr(const char *str);
-int		ft_strlen(const char *str);
-char	*ft_strdup(char *str);
-void	ft_strdel(char **str);
-char	*ft_strjoin(const char *s1, const char *s2);
-char	*ft_strcat(char *dest, char *src);
-void	ft_strjoinfree(char **s1, const char *s2);
+void	ft_strjoinfree(char **s1, const char *s2)
+{
+	char *ret;
+
+	if (!(ret = malloc(sizeof(char) * (ft_strlen(*s1) + ft_strlen(s2) + 1))))
+	{
+		ft_strdel(s1);
+		return ;
+	}
+	ret[0] = '\0';
+	ret = ft_strcat(ret, *s1);
+	ret = ft_strcat(ret, s2);
+	ft_strdel(s1);
+	*s1 = ret;
+}

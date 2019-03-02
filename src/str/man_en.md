@@ -8,3 +8,6 @@
 |strjoin|	char *ft_strjoin(const char *s1, const char *s2) |Allocates memory for a new string which is the concatenation of s1 ans s2 with malloc(3)| New string or NULL if fails|
 strjoinfree|	void	ft_strjoinfree(char **s1, const char *s2)|Concatenates *s1 and s2 at *s1 address after freeing it with free(3). s1 has to be allocated with malloc(3). If the new allocation fails, *s1 is set to NULL||
 |strcat	|char	*ft_strcat(char *dest, char *src);|Add the src string at the end oft dest string deleting it's '\0' and adding one at the end| Address of dest|
+|strnew|||||
+|bzero|||||
+|strjoininsert|||||

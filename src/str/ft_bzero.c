@@ -1,27 +1,30 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_strlen.c                                      .::    .:/ .      .::   */
+/*   ft_bzero.c                                       .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/03/01 14:09:59 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/02 18:15:13 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Created: 2019/03/02 17:19:12 by shthevak     #+#   ##    ##    #+#       */
+/*   Updated: 2019/03/02 18:15:37 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "str.h"
 
-int	ft_strlen(const char *str)
+void	ft_bzero(void *elem, int i)
 {
+	int		j;
+	char	*r;
 
-	const char *s;
-
-	if (str == NULL)
-		return (0);
-	s = str;
-	while (*s)
-		s++;
-	return (s - str);
+	j = 0;
+	if (!elem)
+		return ;
+	r = (char *)elem;
+	while (j < i)
+	{
+		r[j] = 0;
+		j++;
+	}
 }

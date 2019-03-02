@@ -6,7 +6,7 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/02/28 16:45:28 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/01 18:50:12 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/02 18:05:55 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -18,5 +18,5 @@ void	ft_putstr(const char *str)
 
 	if (!str)
 		return ;
-	write(1, str, ft_strlen(str) + 1);
+	write(1, str, ft_strlen(str));
 }

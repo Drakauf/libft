@@ -1,27 +1,25 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_strlen.c                                      .::    .:/ .      .::   */
+/*   ft_strnew.c                                      .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/03/01 14:09:59 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/02 18:15:13 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Created: 2019/03/02 17:17:28 by shthevak     #+#   ##    ##    #+#       */
+/*   Updated: 2019/03/02 17:29:49 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "str.h"
 
-int	ft_strlen(const char *str)
+char	*ft_strnew(int size)
 {
+	char	*str;
 
-	const char *s;
-
-	if (str == NULL)
-		return (0);
-	s = str;
-	while (*s)
-		s++;
-	return (s - str);
+	if (!(str = malloc(sizeof(*str) * (size + 1))))
+		return (NULL);
+	ft_bzero(str, size);
+	str[size] = '\0';
+	return (str);
 }

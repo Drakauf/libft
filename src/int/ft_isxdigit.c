@@ -1,21 +1,20 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_int.h                                         .::    .:/ .      .::   */
+/*   ft_isxdigit.c                                    .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/03/03 15:18:39 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/03 15:47:26 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Created: 2019/03/03 15:43:29 by shthevak     #+#   ##    ##    #+#       */
+/*   Updated: 2019/03/03 15:45:11 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#ifndef FT_INT_H
-# define FT_INT_H
-
-int		ft_atoi(const char *str);
-int		ft_int_len_base(int n, int base);
-int		ft_isdigit(int n);
-int		ft_isxdigit(int n);
-#endif
+int		ft_isdigit(int n)
+{
+		if ((n <= '9' && n >= '0') || (n >= 'a' && n <= 'f')
+				|| (n >= 'A' && n <= 'F'))
+					return (1);
+			return (0);
+}

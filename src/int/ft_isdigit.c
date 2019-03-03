@@ -6,14 +6,14 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/03 13:13:28 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/03 13:13:36 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/03 15:44:03 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-int		ft_isdigit(int a)
+int		ft_isdigit(int n)
 {
-	if (a <= '9' && a >= '0')
+	if (n <= '9' && n >= '0')
 		return (1);
 	return (0);
 }

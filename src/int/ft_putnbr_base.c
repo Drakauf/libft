@@ -1,27 +1,19 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_strcat.c                                      .::    .:/ .      .::   */
+/*   ft_putnbr_base.c                                 .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/03/02 11:08:51 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/03 10:47:45 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Created: 2019/03/03 14:47:50 by shthevak     #+#   ##    ##    #+#       */
+/*   Updated: 2019/03/03 14:57:10 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *dest, char *str)
-{
-	int	i;
-	int j;
 
-	i = 0;
-	j = 0;
-	while (dest[i])
-		i++;
-	while (str[j])
-		dest[i++] = str[j++];
-	dest[i] = '\0';
-	return (dest);
+
+void	ft_putnbr_base(int nb, int base)
+{
+	ft_putstr(ft_itoa_base(nb, base));
 }

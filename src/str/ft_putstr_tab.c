@@ -1,27 +1,28 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_strcat.c                                      .::    .:/ .      .::   */
+/*   ft_putstr_tab.c                                  .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/03/02 11:08:51 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/03 10:47:45 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Created: 2019/03/03 15:00:52 by shthevak     #+#   ##    ##    #+#       */
+/*   Updated: 2019/03/03 15:02:18 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *dest, char *str)
+#include "str.h"
+
+void	ft_puttab2d(const char **tab)
 {
-	int	i;
-	int j;
+	int i;
 
 	i = 0;
-	j = 0;
-	while (dest[i])
-		i++;
-	while (str[j])
-		dest[i++] = str[j++];
-	dest[i] = '\0';
-	return (dest);
+	if (tab == NULL)
+		return ;
+	while (*tab)
+	{
+		ft_putendl(*tab);
+		*tab++;
+	}
 }

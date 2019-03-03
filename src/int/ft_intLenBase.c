@@ -1,27 +1,26 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_strcat.c                                      .::    .:/ .      .::   */
+/*   ft_intLenBase.c                                  .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/03/02 11:08:51 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/03 10:47:45 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Created: 2019/03/03 11:00:05 by shthevak     #+#   ##    ##    #+#       */
+/*   Updated: 2019/03/03 11:00:15 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *dest, char *str)
+int		ft_intlen_base(int n, int base)
 {
-	int	i;
-	int j;
-
-	i = 0;
-	j = 0;
-	while (dest[i])
-		i++;
-	while (str[j])
-		dest[i++] = str[j++];
-	dest[i] = '\0';
-	return (dest);
+	if (n < 0)
+	{
+		if (n / base)
+			return (2 + ft_intlen_base(-(n / base), base));
+		else
+			return (1 + ft_intlen_base((n / base), base));
+	}
+	else if (n < base)
+		return (1);
+	return (1 + ft_intlen_base(n / base, base));
 }

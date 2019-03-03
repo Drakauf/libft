@@ -1,27 +1,22 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_strcat.c                                      .::    .:/ .      .::   */
+/*   ft_strcmp.c                                      .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/03/02 11:08:51 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/03 10:47:45 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Created: 2019/03/03 15:03:05 by shthevak     #+#   ##    ##    #+#       */
+/*   Updated: 2019/03/03 15:03:11 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *dest, char *str)
+int		ft_strcmp(const char *s1, const char *s2)
 {
-	int	i;
-	int j;
-
-	i = 0;
-	j = 0;
-	while (dest[i])
-		i++;
-	while (str[j])
-		dest[i++] = str[j++];
-	dest[i] = '\0';
-	return (dest);
+	while (*s1 == *s2 && *s1)
+	{
+		s1++;
+		s2++;
+	}
+	return ((unsigned char)*s1 - (unsigned char)*s2);
 }

@@ -1,40 +1,36 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_strjoinInsert.c                               .::    .:/ .      .::   */
+/*   ft_atoi.c                                        .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/03/02 17:13:45 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/02 18:22:47 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Created: 2019/03/03 10:49:37 by shthevak     #+#   ##    ##    #+#       */
+/*   Updated: 2019/03/03 10:50:11 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "str.h"
-
-void	ft_strjoininsert(char **s1, char *s2, int i)
+int		ft_atoi(const char *str)
 {
-	char	*ret;
-	int		j;
-	
-	ret = ft_strnew(ft_strlen(*s1) + ft_strlen(s2));
-	j = 0;
-	if (ret != NULL)
+	unsigned long	r;
+	int				s;
+
+	s = 1;
+	r = 0;
+	while ((*str == '\t' || *str == '\f' || *str == '\v' ||
+				*str == '\n' || *str == '\r' || *str == ' ')
+			&& *str != '\0')
+		str++;
+	if (*str == '-' || *str == '+')
+		if (*str++ == '-')
+			s = -1;
+	while (*str >= '0' && *str <= '9')
 	{
-		while ((*s1)[j] && j < i)
-		{
-			ret[j] = (*s1)[j];
-			j++;
-		}
-		ret = ft_strcat(ret, s2);
-		if ((*s1)[j])
-		{
-			ret = ft_strcat(ret, (*s1) + j);
-		}
-		ft_strdel(s1);
-		*s1 = ret;
+		r = r * 10 + *str - 48;
+		str++;
 	}
-	else
-		ft_strdel(s1);
+	if (r >= 9223372036854775807)
+		return (s == 1 ? -1 : 0);
+	return (s * (int)r);
 }

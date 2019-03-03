@@ -1,27 +1,33 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_strcat.c                                      .::    .:/ .      .::   */
+/*   ft_voidrev.c                                     .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/03/02 11:08:51 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/03 10:47:45 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Created: 2019/03/03 15:04:31 by shthevak     #+#   ##    ##    #+#       */
+/*   Updated: 2019/03/03 15:05:16 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *dest, char *str)
+#include "str.h"
+
+void	*ft_voidrev(void *s)
 {
-	int	i;
-	int j;
+	size_t		i;
+	size_t		j;
+	char		*c;
 
 	i = 0;
-	j = 0;
-	while (dest[i])
+	c = (char *)s;
+	while (c[i])
 		i++;
-	while (str[j])
-		dest[i++] = str[j++];
-	dest[i] = '\0';
-	return (dest);
+	j = 0;
+	i--;
+	while (i > j)
+	{
+		ft_voidswap(&c[i--], &c[j++]);
+	}
+	return (s);
 }

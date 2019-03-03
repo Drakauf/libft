@@ -6,7 +6,7 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/02 11:03:25 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/02 11:08:44 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/03 15:10:58 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -15,7 +15,7 @@
 
 char	*ft_strjoin(const char *s1, const char *s2)
 {
-	int 	i;
+	int		i;
 	int		j;
 	char	*ret;
 

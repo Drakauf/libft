@@ -1,0 +1,4 @@
+|Function Name|Prototype|Description|Return Value|
+|:--------:|:--------:|:--------:|:--------:|
+|atoi|ft_atoi(const char *str)|Convert the givern string to an integer|The result of the conversion|
+

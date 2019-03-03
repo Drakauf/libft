@@ -6,12 +6,12 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/03 14:49:33 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/03 14:49:43 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/03 16:39:31 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "int.h"
+#include "ft_int.h"
 
 void	ft_putnbr(int nb)
 {

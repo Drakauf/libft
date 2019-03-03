@@ -6,7 +6,7 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/03 15:18:39 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/03 15:28:56 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/03 15:36:56 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -15,5 +15,5 @@
 # define FT_INT_H
 
 int		ft_atoi(const char *str);
-
+int		ft_int_len_base(int n, int base);
 #endif

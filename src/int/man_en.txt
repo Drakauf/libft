@@ -1,4 +1,4 @@
 |Function Name|Prototype|Description|Return Value|
 |:--------:|:--------:|:--------:|:--------:|
 |atoi|ft_atoi(const char *str)|Convert the givern string to an integer|The result of the conversion|
-
+|int_len_base|ft_int_len_base(int n, int base)|Calculates the number of caracter that an integer will have when converted into base|Lenght|

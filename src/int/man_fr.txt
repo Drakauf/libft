@@ -1,3 +1,4 @@
 |Nom de fonction|Prototype|Description|Valeur de retour|
 |:--------:|:--------:|:--------:|:--------:|
 |atoi|ft_atoi(const char *str)|Converti la chaine de caractere passe en parametre en un int|Resultat de la conversion|
+|int_len_base|ft_int_len_base(int n, int base)|Calcul le nombre de caracteres qu'aura un nombre converti en base|La longueur|

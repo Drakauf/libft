@@ -6,7 +6,7 @@
 #    By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2019/02/25 12:55:34 by shthevak     #+#   ##    ##    #+#        #
-#    Updated: 2019/03/03 15:28:59 by shthevak    ###    #+. /#+    ###.fr      #
+#    Updated: 2019/03/03 15:36:54 by shthevak    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -43,7 +43,7 @@ UINC_NAME = unix.h
 USRC_NAME =
 
 IINC_NAME = int.h
-ISRC_NAME = ft_atoi.c
+ISRC_NAME = ft_atoi.c ft_int_len_base.c
 
 # **************************************************************************** #
 #  									VAR                                        #

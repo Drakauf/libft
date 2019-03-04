@@ -6,7 +6,7 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/03 13:14:38 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/03 15:10:06 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/04 13:34:58 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -39,6 +39,8 @@ char		*ft_itoa_base(int nb, int base)
 	int		j;
 	long	n;
 
+	if (base <= 1)
+		return (NULL);
 	j = ft_intlen_base(nb, base);
 	if (!(r = malloc(sizeof(*r) * (j + 1))))
 		return (NULL);

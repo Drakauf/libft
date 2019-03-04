@@ -6,12 +6,12 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/03 13:13:58 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/03 13:14:11 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/04 13:32:53 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "str.h"
+#include "ft_str.h"
 
 char	*ft_itoa(int i)
 {

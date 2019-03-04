@@ -4,3 +4,5 @@
 |isalpha|int ft_isalpha(int c)|Verifie si l'argiment est une lettre majuscule ou minuscule|1 si vrai, 0 sinon|
 |isascii|int ft_isascii(int c)|Verifie si l'argument est un caractere ASCII|1 si vrai, 0 sinon|
 |itoa|char *ft_itoa(int c)|Convertit un int en une chaine de caractere|Resultat de la conversion|
+|putchar|void ft_putchar(char c)|Ecrit le caractere c sur la sortie standard converti en un unsigned char||
+|putchar_fd|void ft_putchar_fd(char c, int fd)|Ecrit le caractere c, sur le descripteur de fichier fd, converti en un unsigned char||

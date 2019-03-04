@@ -6,7 +6,7 @@
 #    By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2019/02/25 12:55:34 by shthevak     #+#   ##    ##    #+#        #
-#    Updated: 2019/03/04 12:48:59 by shthevak    ###    #+. /#+    ###.fr      #
+#    Updated: 2019/03/04 13:17:47 by shthevak    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -36,10 +36,10 @@ IOBJ_PATH = $(addprefix $(OBJ_PATH), int/)
 # 									SRCS                                       #
 # **************************************************************************** #
 
-SINC_NAME = str.h
-SSRC_NAME = 
+SINC_NAME = ft_str.h
+SSRC_NAME = ft_bzero.c 
 
-UINC_NAME = unix.h
+UINC_NAME = 
 USRC_NAME =
 
 IINC_NAME = ft_int.h

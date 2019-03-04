@@ -1,28 +1,25 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_int.h                                         .::    .:/ .      .::   */
+/*   ft_voidswap.c                                    .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/03/03 15:18:39 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/04 12:48:51 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Created: 2019/03/03 15:05:36 by shthevak     #+#   ##    ##    #+#       */
+/*   Updated: 2019/03/04 12:47:53 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#ifndef FT_INT_H
-# define FT_INT_H
+void	ft_voidswap(void *s, void *d)
+{
+	unsigned char	c;
+	unsigned char	*a;
+	unsigned char	*b;
 
-# include <unistd.h>
-# include <stdlib.h>
-
-int		ft_atoi(const char *str);
-int		ft_int_len_base(int n, int base);
-int		ft_isdigit(int n);
-int		ft_isxdigit(int n);
-void	ft_putnbr(int n);
-void	ft_putnbr_base(int n, int base);
-void	*ft_voidrev(void *s);
-void	ft_voidswap(void *s, void *d);
-#endif
+	a = (unsigned char *)s;
+	b = (unsigned char *)d;
+	c = *a;
+	*a = *b;
+	*b = c;
+}

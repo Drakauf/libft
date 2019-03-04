@@ -1,3 +1,5 @@
 |Nom de fonction|Prototype|Description|Valeur de retour|
 |:--------:|:--------:|:--------:|:--------:|
 |bzero|void ft_bzero(void *elem, int i)|Met a 0 les i premiers element de elem||
+|ft_isalpha|int ft_isalpha(int c)|Verifie si l'argiment est une lettre majuscule ou minuscule|1 si vrai, 0 sinon|
+|ft_isascii|int ft_isascii(int c)|Verifie si l'argument est un caractere ASCII|1 si vrai, 0 sinon|

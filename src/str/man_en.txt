@@ -1,2 +1,5 @@
 |Function Name|Prototype|Description|Return Value|
 |:--------:|:--------:|:--------:|:--------:|
+|bzero|void ft_bzero(void *elem, int i)|Set i first element of elem to 0||
+|ft_isalpha|int ft_isalpha(int c)|Checks if argument is a capital or small letter|1 if true, else 0|
+|ft_isascii|int ft_isascii(int c)|Checks if argument is ASCII|1 if true, else 0|

@@ -6,7 +6,7 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/03 15:18:39 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/05 13:43:19 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/05 14:07:07 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -23,4 +23,6 @@ void	ft_putchar(char c);
 void	ft_putchar(char c, int fd);
 void	ft_putendl(const char *s);
 void	ft_putendl_fd(const char *s, int fd);
+void	ft_putstr(const char *s);
+void	ft_putstr_fd(const char *s, int fd); 
 #endif

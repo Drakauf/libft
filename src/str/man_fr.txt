@@ -8,3 +8,5 @@
 |putchar_fd|void ft_putchar_fd(char c, int fd)|Ecrit le caractere c, sur le descripteur de fichier fd, converti en un unsigned char||
 |putendl|void ft_putendl(const char *s)|Ecris la chaine de caractere passee en parametre sur la sortie standard avec un retour a la ligne||
 |putendl_fd|void ft_putendl_fd(const char *s, int fd)|Ecris la chaine de caractere passee en parametre sur le descripteur de fichier fd avec un retour a la ligne||
+|putstr|void ft_putstr(const char *str)|Ecrit la chaine de caractere jusqu'au '\0' sur la sortie standard||
+|putstr_fd|void ft_putstr_fd(const char *str, int fd)|Ecrit la chaine de caractere jusqu'au '\0' sur le descripteur de fichier fd||

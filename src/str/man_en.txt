@@ -8,3 +8,5 @@
 |putchar_fd|void ft_putchar_fd(char c, int fd)|Writes chararacter c on the file descriptor fd as an unsigned char.||
 |putendl|void ft_putendl(const char *s)|Writes the given string on stdout with a '\n'||
 |putendl_fd|void ft_putendl_fd(const char *s, int fd)|Writes the given string on fd. fd should be a file descriptor||
+|putstr|void ft_putstr(const char *str)|Writes string until '\0' on stdout||
+|putstr_fd|void ft_putstr_fd(const char *str, int fd)|Writes string until '\0' on the given file descriptor fd||

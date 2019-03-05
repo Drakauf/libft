@@ -6,14 +6,14 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/03 14:44:02 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/03 14:46:30 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/05 13:42:38 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "str.h"
 
-void	ft_putendl(char const *s)
+void	ft_putendl(const char *s)
 {
 	ft_putstr(s);
 	ft_putchar('\n');

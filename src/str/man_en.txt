@@ -6,3 +6,5 @@
 |itoa|char *ft_itoa(int c)|Convert an integer into a string|Result of the conversion|
 |putchar|void ft_putchar(char c)|Writes chararacter c on stdout as an unsigned char.||
 |putchar_fd|void ft_putchar_fd(char c, int fd)|Writes chararacter c on the file descriptor fd as an unsigned char.||
+|putendl|void ft_putendl(const char *s)|Writes the given string on stdout with a '\n'||
+|putendl_fd|void ft_putendl_fd(const char *s, int fd)|Writes the given string on fd. fd should be a file descriptor||

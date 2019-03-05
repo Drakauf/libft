@@ -6,3 +6,5 @@
 |itoa|char *ft_itoa(int c)|Convertit un int en une chaine de caractere|Resultat de la conversion|
 |putchar|void ft_putchar(char c)|Ecrit le caractere c sur la sortie standard converti en un unsigned char||
 |putchar_fd|void ft_putchar_fd(char c, int fd)|Ecrit le caractere c, sur le descripteur de fichier fd, converti en un unsigned char||
+|putendl|void ft_putendl(const char *s)|Ecris la chaine de caractere passee en parametre sur la sortie standard avec un retour a la ligne||
+|putendl_fd|void ft_putendl_fd(const char *s, int fd)|Ecris la chaine de caractere passee en parametre sur le descripteur de fichier fd avec un retour a la ligne||

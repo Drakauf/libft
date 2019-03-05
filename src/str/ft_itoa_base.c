@@ -6,10 +6,12 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/03 13:14:38 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/04 13:34:58 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/05 14:11:40 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
+
+#include "ft_str.h"
 
 static char	ft_inttochar(int i)
 {

@@ -6,12 +6,12 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/01 14:09:59 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/03 15:13:11 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/05 14:17:16 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "ft_str.h"
 
 int	ft_strlen(const char *str)
 {

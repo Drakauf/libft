@@ -6,12 +6,12 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/03 14:43:19 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/03 14:43:38 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/05 14:13:36 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "ft_str.h"
 
 void	ft_putchar_fd(char c, int fd)
 {

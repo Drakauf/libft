@@ -6,12 +6,12 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/02 17:17:28 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/03 10:48:23 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/05 14:17:22 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "str.h"
+#include "ft_str.h"
 
 char	*ft_strnew(int size)
 {

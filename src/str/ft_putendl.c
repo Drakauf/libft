@@ -6,12 +6,12 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/03 14:44:02 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/05 13:42:38 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/05 14:13:53 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "str.h"
+#include "ft_str.h"
 
 void	ft_putendl(const char *s)
 {

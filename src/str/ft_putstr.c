@@ -6,12 +6,12 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/02/28 16:45:28 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/03 15:08:13 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/05 14:14:52 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "str.h"
+#include "ft_str.h"
 
 void	ft_putstr(const char *str)
 {

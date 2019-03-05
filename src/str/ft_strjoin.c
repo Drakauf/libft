@@ -6,12 +6,12 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/02 11:03:25 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/03 15:10:58 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/05 14:16:01 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#include "str.h"
+#include "ft_str.h"
 
 char	*ft_strjoin(const char *s1, const char *s2)
 {

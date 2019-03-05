@@ -10,3 +10,4 @@
 |putendl_fd|void ft_putendl_fd(const char *s, int fd)|Writes the given string on fd. fd should be a file descriptor||
 |putstr|void ft_putstr(const char *str)|Writes string until '\0' on stdout||
 |putstr_fd|void ft_putstr_fd(const char *str, int fd)|Writes string until '\0' on the given file descriptor fd||
+|putstr_tab|void ft_putstr_tab(char **s)|Write the "array" of string on stdout. Each string is followed by '\n'||

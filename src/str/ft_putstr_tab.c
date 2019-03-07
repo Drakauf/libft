@@ -6,7 +6,7 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/03 15:00:52 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/05 14:15:12 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/07 16:28:40 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -23,6 +23,6 @@ void	ft_puttab2d(const char **tab)
 	while (*tab)
 	{
 		ft_putendl(*tab);
-		*tab++;
+		(*tab)++;
 	}
 }

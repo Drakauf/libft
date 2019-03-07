@@ -6,14 +6,14 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/03 15:02:39 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/03 15:02:49 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/07 16:29:04 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 char	*ft_strcpy(char *dest, const char *str)
 {
-	size_t i;
+	int i;
 
 	i = 0;
 	while (str[i] != '\0')

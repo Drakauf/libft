@@ -6,7 +6,7 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/03 15:18:39 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/07 11:28:42 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/07 11:32:24 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -31,4 +31,5 @@ void	ft_putstr_fd(const char *s, int fd);
 void	ft_putstr_tab(char **tab);
 char	*ft_strcat(char *dest, char *src);
 int		ft_strcmp(cont char *s1, const char *s2);
+char	*ft_strcpy(char *dest, const char *str);
 #endif

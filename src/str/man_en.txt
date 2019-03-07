@@ -13,3 +13,4 @@
 |putstr_tab|void ft_putstr_tab(char **s)|Write the "array" of string on stdout. Each string is followed by '\n'||
 |strcat|char *ft_strcat(char *dest, char *src)|Add the src string at the end oft dest string deleting it's '\0' and adding one at the end|Address of dest|
 |strcmp|int ft_strcmp(const char *s1, const char *s2)|Compare strings untill the first difference|0 if the strings are the same else *s1 - *s2|
+|strcpy|char *ft_strcpy(char *dest, const char *src)|Copies the src string in dest. dest should be long enough to contain src|Dest|

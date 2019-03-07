@@ -17,3 +17,5 @@
 |strdel|void ft_strdel(char **str)|Prend en paramètre l’adresse d’une chaîne de caractères qui doit être libérée avec free(3) et son pointeur mis à NULL.||
 |strdup|char *ft_strdup(char *str)|Retourne un pointeur sur une nouvelle chaine dupliquee en utilisant malloc(3) et pouvant etre liberee en utilisant free(3)|Un pointeur vers la chaine dupliquee ou NULL en cas d'erreur|
 |strequ|int ft_strequ(const char *s1, const char *s2)|Compare les 2 chaines|1 si les 2 chaines sont identique, 0 sinon|
+|strjoin|char *ft_strjoin(const char *s1, const char *s2) |Alloue (avec malloc(3)) et retourne une chaîne de caractères “fraiche” terminée par un ’\0’ résultant de la concaténation de s1 et s2.| Nouvelle chaine de caractere ou NULL en cas d'erreur|
+strjoinfree|void ft_strjoinfree(char **s1, const char *s2)|Concatene *s1 et s2 et remplace *s1 apres avoir free(). s1 doit etre un pointeur sur une chaine allouee avec malloc(3). Le pointeur s1 est mis a NULL si la nouvelle allocation (malloc(3)) echoue||

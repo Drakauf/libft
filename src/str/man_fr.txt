@@ -21,3 +21,4 @@
 |strjoin_free|void ft_strjoin_free(char **s1, const char *s2)|Concatene *s1 et s2 et remplace *s1 apres avoir free(). s1 doit etre un pointeur sur une chaine allouee avec malloc(3). Le pointeur s1 est mis a NULL si la nouvelle allocation (malloc(3)) echoue||
 |strjoin_insert|void ft_strjoin_insert(char **s1, char *s2, int i)|Insere s2 dans *s1 a l'index i et remplace *s1 apres avoir free(). s1 doit etre un pointeur sur une chaine allouee avec malloc(3). Le pointeur s1 est mis a NULL si la nouvelle allocation (malloc(3)) echoue||
 |strlen|int ft_strlen(const char *str) |Calculates the length of the string s, excluding '\0'|Length of string|
+|strnew|char *ft_strnew(int size)|Allocates with malloc(3) a new string lenght of size filled with '\0'|The allocated string|

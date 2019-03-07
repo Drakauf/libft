@@ -6,7 +6,7 @@
 #    By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2019/02/25 12:55:34 by shthevak     #+#   ##    ##    #+#        #
-#    Updated: 2019/03/07 16:27:34 by shthevak    ###    #+. /#+    ###.fr      #
+#    Updated: 2019/03/07 16:33:06 by shthevak    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -41,7 +41,8 @@ SSRC_NAME = ft_bzero.c ft_isalpha.c ft_isascii.c ft_itoa.c ft_itoa_base.c\
 			ft_putchar.c ft_putchar_fd.c ft_putendl.c ft_putendl_fd.c\
 			ft_putstr.c ft_putstr_fd.c ft_putstr_tab.c ft_strcat.c ft_strcmp.c\
 			ft_strcpy.c ft_strdel.c ft_strdup.c ft_strequ.c ft_strjoin.c\
-			ft_strjoin_free.c ft_strjoin_insert.c ft_strlen.c
+			ft_strjoin_free.c ft_strjoin_insert.c ft_strlen.c ft_strnew.c\
+
 
 UINC_NAME = 
 USRC_NAME =

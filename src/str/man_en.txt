@@ -15,3 +15,4 @@
 |strcmp|int ft_strcmp(const char *s1, const char *s2)|Compare strings untill the first difference|0 if the strings are the same else *s1 - *s2|
 |strcpy|char *ft_strcpy(char *dest, const char *src)|Copies the src string in dest. dest should be long enough to contain src|Dest|
 |strdel|void ft_strdel(char **str)|Prend en paramètre l’adresse d’une chaîne de caractères qui doit être libérée avec free(3) et son pointeur mis à NULL.||
+|strdup|char *ft_strdup(char *str)|Duplicates string and return a pointer to it, the new string is memory allocated with malloc(3) and can be freed with free(3)|Pointer to the new string or NULL if an error occured|

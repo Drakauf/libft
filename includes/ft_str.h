@@ -6,7 +6,7 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/03 15:18:39 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/07 11:50:04 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/07 13:27:32 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -33,4 +33,5 @@ char	*ft_strcat(char *dest, char *src);
 int		ft_strcmp(cont char *s1, const char *s2);
 char	*ft_strcpy(char *dest, const char *str);
 void	ft_strdel(char **str);
+char	*ft_strdup(char *str);
 #endif

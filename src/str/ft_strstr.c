@@ -1,32 +1,32 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_strnstr.c                                     .::    .:/ .      .::   */
+/*   ft_strstr.c                                      .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/03 15:04:04 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/05 14:17:26 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/07 16:36:25 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-char	*ft_strnstr(const char *str, const char *tofind, size_t n)
+char	*ft_strstr(const char *str, const char *tofind)
 {
-	size_t i;
-	size_t j;
+	int		j;
+	char	*s;
 
-	i = 0;
-	if (tofind[i] == '\0')
-		return ((char *)str);
-	while (str[i])
+	s = (char*)str;
+	if (tofind[0] == '\0')
+		return (s);
+	while (*s)
 	{
 		j = 0;
-		while (str[i + j] == tofind[j] && tofind[j] && i + j < n)
+		while (*(s + j) == tofind[j] && tofind[j])
 			j++;
 		if (tofind[j] == '\0')
-			return ((char *)(str + i));
-		i++;
+			return (s);
+		s++;
 	}
 	return (NULL);
 }

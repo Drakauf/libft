@@ -22,3 +22,6 @@
 |strjoin_insert|void ft_strjoin_insert(char **s1, char *s2, int i)|Insere s2 dans *s1 a l'index i et remplace *s1 apres avoir free(). s1 doit etre un pointeur sur une chaine allouee avec malloc(3). Le pointeur s1 est mis a NULL si la nouvelle allocation (malloc(3)) echoue||
 |strlen|int ft_strlen(const char *str) |Calculates the length of the string s, excluding '\0'|Length of string|
 |strnew|char *ft_strnew(int size)|Allocates with malloc(3) a new string lenght of size filled with '\0'|The allocated string|
+|strstr|char *ft_strstr(const char *s1, const char *tofind)|Look fot the string tofind in s1|Address of the begining of tofind in s1 if found else NULL|
+|voidrev|void *ft_voidrev(void *s)|Reverse the element, for example, if you pass a string it'll work as a strrev|Return it's argument|
+|voidswap|void ft_voidswap(void *elem1, void *elem2)|Exchange the arguments address||

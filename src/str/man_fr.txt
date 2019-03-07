@@ -14,3 +14,4 @@
 |strcat|char *ft_strcat(char *dest, char *src);|Ajoute la chaîne src à la fin de la chaîne dest en écrasant son caractère nul (« \0 »). Les chaînes ne doivent pas se chevaucher, et la chaîne dest doit être assez grande pour accueillir le résultat. La chaine dest est terminee par '\0'|Pointeur sur la chaine dest|
 |strcmp|int ft_strcmp(const char *s1, const char *s2)|Compare les 2 chaines de caractere jusau'a la premiere difference|0 si les 2 chaines sont identique, *s1 - *s2 sinon|
 |strcpy|char *ft_strcpy(char *dest, const char *src)|Copie la chaîne pointée par dans la chaîne pointée par dest. La chaîne dest doit être assez grande pour accueillir la copie|Pointeur sur la chaine de dest|
+|strdel|void ft_strdel(char **str)|Prend en paramètre l’adresse d’une chaîne de caractères qui doit être libérée avec free(3) et son pointeur mis à NULL.||

@@ -15,3 +15,5 @@
 |strcmp|int ft_strcmp(const char *s1, const char *s2)|Compare les 2 chaines de caractere jusau'a la premiere difference|0 si les 2 chaines sont identique, *s1 - *s2 sinon|
 |strcpy|char *ft_strcpy(char *dest, const char *src)|Copie la chaîne pointée par dans la chaîne pointée par dest. La chaîne dest doit être assez grande pour accueillir la copie|Pointeur sur la chaine de dest|
 |strdel|void ft_strdel(char **str)|Prend en paramètre l’adresse d’une chaîne de caractères qui doit être libérée avec free(3) et son pointeur mis à NULL.||
+|strdup|char *ft_strdup(char *str)|Retourne un pointeur sur une nouvelle chaine dupliquee en utilisant malloc(3) et pouvant etre liberee en utilisant free(3)|Un pointeur vers la chaine dupliquee ou NULL en cas d'erreur|
+|strequ|int ft_strequ(const char *s1, const char *s2)|Compare les 2 chaines|1 si les 2 chaines sont identique, 0 sinon|

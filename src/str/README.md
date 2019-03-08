@@ -23,5 +23,6 @@
 |strlen|int ft_strlen(const char *str) |Calculates the length of the string s, excluding '\0'|Length of string|
 |strnew|char *ft_strnew(int size)|Allocates with malloc(3) a new string lenght of size filled with '\0'|The allocated string|
 |strstr|char *ft_strstr(const char *s1, const char *tofind)|Look fot the string tofind in s1|Address of the begining of tofind in s1 if found else NULL|
+|strsub|char *ft_strsub(char const *s, unsigned int start, size_t len)|Duplicate string s from start for len lenght. duplicated string is alocated with malloc(3)|The duplicated string|
 |voidrev|void *ft_voidrev(void *s)|Reverse the element, for example, if you pass a string it'll work as a strrev|Return it's argument|
 |voidswap|void ft_voidswap(void *elem1, void *elem2)|Exchange the arguments address||

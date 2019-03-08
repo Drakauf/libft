@@ -6,7 +6,7 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/03 15:18:39 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/07 16:38:18 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/08 17:52:36 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -41,6 +41,7 @@ void	ft_strjoin_insert(char **s1, char *s2, int i);
 int		ft_strlen(const char *str);
 char	*ft_strnew(int size);
 char	*ft_strstr(const char *str, const char *tofind);
+char	*ft_strsub(char const *s, unsigned int start, size_t len);
 void	*ft_voidrev(void *s);
 void	ft_voidswap(void *s, void *d);
 #endif

@@ -22,6 +22,7 @@
 |strjoin_insert|void ft_strjoin_insert(char **s1, char *s2, int i)|Insert s2 in *s1 at index i at *s1 address after freeing it with free(3). s1 has to be allocated with malloc(3). If the new allocation fails, *s1 is set to NULL||
 |strlen|int ft_strlen(const char *str)|Calcule la longueur de la chaine excluant le '\0'|Longueur de la chaine|
 |strnew|char *ft_strnew(int size)|Cree une chaine de caractere de taille size avec malloc(3) remplie de '\0'|La chaine cree|
+|strrmvi||||
 |strstr|char *ft_strstr(const char *s1, const char *tofind)|Cherche la chaine tofind dans s1|Revoi un pointeur sur le debut de la chaine tofind dans s1 ou NULL si il n'y est pas|
 |strsub|char *ft_strsub(char const *s, unsigned int start, size_t len)|Cree une chaine de caractere identique a s a partir de start sur une longueur len allouee avec malloc(3)|La nouvelle chaine|
 |voidrev|void *ft_voidrev(void *s)|Inverse l'ordre des elements, si l'on passe par exemple une chaine de caractere en arguments, le resultat sera le meme que la fonction strrev|Retourne son argument|

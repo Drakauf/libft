@@ -6,12 +6,12 @@
 #    By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2019/02/25 12:55:34 by shthevak     #+#   ##    ##    #+#        #
-#    Updated: 2019/03/09 13:50:45 by shthevak    ###    #+. /#+    ###.fr      #
+#    Updated: 2019/03/13 17:42:35 by shthevak    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
 
-.PHONY : all clean fclean re sobj uobj
+.PHONY : all clean fclean re sobj uobj iobj
 
 NAME = libft.a
 
@@ -92,18 +92,18 @@ $(OBJ_PATH):
 	@mkdir -p $(IOBJ_PATH) 2> /dev/null
 
 $(SOBJ_PATH)%.o: $(SSRC_PATH)%.c $(SINC)
-	gcc $(FLAGS) -I $(INC_PATH) -o $@ -c $<
+	@gcc $(FLAGS) -I $(INC_PATH) -o $@ -c $<
 
 $(UOBJ_PATH)%.o: $(USRC_PATH)%.c $(UINC)
-	gcc $(FLAGS) -I $(INC_PATH) -o $@ -c $<
+	@gcc $(FLAGS) -I $(INC_PATH) -o $@ -c $<
 
 $(IOBJ_PATH)%.o: $(ISRC_PATH)%.c $(IINC)
-	gcc $(FLAGS) -I $(INC_PATH) -o $@ -c $<
+	@gcc $(FLAGS) -I $(INC_PATH) -o $@ -c $<
 	
 clean: 
-	rm -rf $(OBJ_PATH)
+	@rm -rf $(OBJ_PATH)
 
 fclean: clean
-	rm -rf $(NAME)
+	@rm -rf $(NAME)
 
 re: fclean all

@@ -6,7 +6,7 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/13 23:24:43 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/13 23:27:33 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/14 01:39:06 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -18,5 +18,5 @@ int		ft_terminal_h(int fd)
 	struct winsize	w;
 
 	ioctl(fd, TIOCGWINSZ, &w);
-	return(w.ws_row);
+	return (w.ws_row);
 }

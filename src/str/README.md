@@ -27,3 +27,4 @@
 |strsub|char *ft_strsub(char const *s, unsigned int start, size_t len)|Duplicate string s from start for len lenght. duplicated string is alocated with malloc(3)|The duplicated string|
 |voidrev|void *ft_voidrev(void *s)|Reverse the element, for example, if you pass a string it'll work as a strrev|Return it's argument|
 |voidswap|void ft_voidswap(void *elem1, void *elem2)|Exchange the arguments address||
+|ft_put_space||||

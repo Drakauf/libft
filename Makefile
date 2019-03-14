@@ -6,7 +6,7 @@
 #    By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2019/02/25 12:55:34 by shthevak     #+#   ##    ##    #+#        #
-#    Updated: 2019/03/13 17:42:35 by shthevak    ###    #+. /#+    ###.fr      #
+#    Updated: 2019/03/14 00:54:00 by shthevak    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -42,10 +42,10 @@ SSRC_NAME = ft_bzero.c ft_isalpha.c ft_isascii.c ft_itoa.c ft_itoa_base.c\
 			ft_putstr.c ft_putstr_fd.c ft_putstr_tab.c ft_str_remove_index.c ft_strcat.c ft_strcmp.c\
 			ft_strcpy.c ft_strdel.c ft_strdup.c ft_strequ.c ft_strjoin.c\
 			ft_strjoin_free.c ft_strjoin_insert.c ft_strlen.c ft_strnew.c\
-			ft_strstr.c ft_strsub.c ft_voidrev.c ft_voidswap.c
+			ft_strstr.c ft_strsub.c ft_voidrev.c ft_voidswap.c ft_put_space.c
 
-UINC_NAME = 
-USRC_NAME =
+UINC_NAME = ft_unix.h
+USRC_NAME = ft_terminal_h.c ft_terminal_w.c
 
 IINC_NAME = ft_int.h
 ISRC_NAME = ft_atoi.c ft_int_len_base.c ft_isdigit.c ft_isxdigit.c ft_putnbr.c\

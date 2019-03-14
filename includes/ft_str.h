@@ -6,7 +6,7 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/03 15:18:39 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/09 15:14:38 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/14 00:51:15 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -45,4 +45,6 @@ char	*ft_strstr(const char *str, const char *tofind);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
 void	*ft_voidrev(void *s);
 void	ft_voidswap(void *s, void *d);
+
+void	ft_put_space(int i);
 #endif

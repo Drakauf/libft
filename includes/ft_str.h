@@ -6,7 +6,7 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/03 15:18:39 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/14 00:51:15 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/14 05:59:06 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -47,4 +47,6 @@ void	*ft_voidrev(void *s);
 void	ft_voidswap(void *s, void *d);
 
 void	ft_put_space(int i);
+char	**ft_strsplit(const char *str, char c);
+void	ft_free_tab(char **tab);
 #endif

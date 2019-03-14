@@ -28,3 +28,4 @@
 |voidrev|void *ft_voidrev(void *s)|Reverse the element, for example, if you pass a string it'll work as a strrev|Return it's argument|
 |voidswap|void ft_voidswap(void *elem1, void *elem2)|Exchange the arguments address||
 |ft_put_space||||
+|ft_strsplit||||

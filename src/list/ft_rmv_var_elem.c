@@ -6,7 +6,7 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/14 07:26:29 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/14 08:45:07 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/14 09:23:13 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -23,7 +23,7 @@ static int		ft_strcmp(const char *s1, const char *s2)
 	return ((unsigned char)*s1 - (unsigned char)*s2);
 }
 
-void	ft_unsetenv(char *str, t_var **envir)
+void			ft_unsetenv(char *str, t_var **envir)
 {
 	t_var *list;
 	t_var *tmp;
@@ -51,4 +51,3 @@ void	ft_unsetenv(char *str, t_var **envir)
 		list = list->next;
 	}
 }
-

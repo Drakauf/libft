@@ -6,14 +6,14 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/14 07:10:40 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/14 07:21:56 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/14 09:24:52 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "ft_list.h"
 
-static int		ft_strcmp(const char *s1, const char *s2)
+static int	ft_strcmp(const char *s1, const char *s2)
 {
 	while (*s1 == *s2 && *s1)
 	{

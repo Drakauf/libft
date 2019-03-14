@@ -6,7 +6,7 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/14 05:16:00 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/14 05:30:30 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/14 09:22:50 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -42,7 +42,7 @@ static char	*ft_strdup(char *str)
 	return (ret);
 }
 
-t_var	*create_var_str_elem(char *var, char *val)
+t_var		*create_var_str_elem(char *var, char *val)
 {
 	t_var	*list;
 

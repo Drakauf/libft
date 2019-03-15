@@ -1,31 +1,21 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_unix.h                                        .::    .:/ .      .::   */
+/*   ft_file_xrights.c                                .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/03/13 21:42:15 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/15 17:00:18 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Created: 2019/03/15 16:59:29 by shthevak     #+#   ##    ##    #+#       */
+/*   Updated: 2019/03/15 16:59:48 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#ifndef FT_UNIX_H
-# define FT_UNIX_H
+#include "ft_unix.h"
 
-# include <sys/ioctl.h>
-# include <unistd.h>
-# include <sys/types.h> 
-# include <sys/wait.h>
-
-int ft_terminal_h(int ft);
-int	ft_terminal_w(int fd);
-int	ft_file_exists(char *path);
-int	ft_create_file(char *path);
-int	ft_execute(char *exec, char **opt, char **env);
-int	ft_file_arights(char *path);
-int	ft_file_rrights(char *path);
-int	ft_file_wrights(char *path);
-int	ft_file_xrights(char *path);
-#endif
+int	ft_file_xrights(char *path)
+{
+	if (access(path, X_OK) != -1)
+		return (1);
+	return (0);
+}

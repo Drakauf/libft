@@ -1,27 +1,33 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_unix.h                                        .::    .:/ .      .::   */
+/*   ft_create_file.c                                 .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/03/13 21:42:15 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/15 15:43:19 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Created: 2019/03/15 14:57:40 by shthevak     #+#   ##    ##    #+#       */
+/*   Updated: 2019/03/15 15:41:15 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#ifndef FT_UNIX_H
-# define FT_UNIX_H
+#include "ft_unix.h"
 
-# include <sys/ioctl.h>
-# include <unistd.h>
-# include <sys/types.h> 
-# include <sys/wait.h>
-
-int ft_terminal_h(int ft);
-int	ft_terminal_w(int fd);
-int	ft_file_exists(char *path);
-int	ft_create_file(char *path);
-int	ft_execute(char *exec, char **opt, char **env);
-#endif
+int		ft_create_file(char *path)
+{
+	char *(tab[3]);
+	if (access(path, F_OK) != 0)
+	{
+		if (access("/usr/bin/touch", X_OK) == 0)
+		{
+			tab[0] = "/usr/bin/touch";
+			tab[1] = path;
+			tab[2] = NULL;
+			if(ft_execute("/usr/bin/touch", tab, NULL))
+				return (1);
+			return (0);
+		}
+		return (0);
+	}
+	return (0);
+}

@@ -1,27 +1,30 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_unix.h                                        .::    .:/ .      .::   */
+/*   ft_execute.c                                     .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/03/13 21:42:15 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/15 15:43:19 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Created: 2019/03/15 15:32:21 by shthevak     #+#   ##    ##    #+#       */
+/*   Updated: 2019/03/15 15:43:17 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
-#ifndef FT_UNIX_H
-# define FT_UNIX_H
+#include "ft_unix.h"
 
-# include <sys/ioctl.h>
-# include <unistd.h>
-# include <sys/types.h> 
-# include <sys/wait.h>
+int	ft_execute(char *exec, char **opt, char **env)
+{
+	int		w;
+	pid_t	p;
 
-int ft_terminal_h(int ft);
-int	ft_terminal_w(int fd);
-int	ft_file_exists(char *path);
-int	ft_create_file(char *path);
-int	ft_execute(char *exec, char **opt, char **env);
-#endif
+	p = fork();
+	if (p == 0)
+	{
+		if (execve(exec, opt, env) == -1)
+			return (0);
+	}
+	else
+		wait(&w);
+	return (1);
+}

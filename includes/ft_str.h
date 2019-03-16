@@ -6,7 +6,7 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/03 15:18:39 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/14 05:59:06 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/16 12:49:11 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -16,6 +16,22 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+#include <fcntl.h>
+
+
+/*
+** Get Next Line Struct
+*/
+
+# define BUFF_SIZE 1
+
+typedef struct		s_stock
+{
+	char			*str;
+	int				fd;
+	struct s_stock	*next;
+}					t_stock;
+
 
 void	ft_bzero(void *elem, int i);
 void	ft_isalpha(int c);
@@ -49,4 +65,5 @@ void	ft_voidswap(void *s, void *d);
 void	ft_put_space(int i);
 char	**ft_strsplit(const char *str, char c);
 void	ft_free_tab(char **tab);
+int					get_next_line(int fd, char **line);
 #endif

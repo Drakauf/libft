@@ -6,7 +6,7 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/14 02:55:53 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/14 09:21:58 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/17 13:15:08 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -56,4 +56,11 @@ void					ft_add_var_elem(t_var **l, t_var *ne);
 void					ft_print_var_list(t_var **list);
 void					ft_change_var_str(char *var, char *val, t_var **env);
 void					ft_free_var_list(t_var **list);
+void					ft_rmv_var_elem(char *str, t_var **env);
+
+t_list					*create_list_elem(char *elem);
+void					ft_add_list_elem(t_list **l, t_list *ne);
+void					ft_print_list(t_list **list);
+void					ft_rmv_list_elem(char *str, t_list **list);
+void					ft_free_list(t_list **list);
 #endif

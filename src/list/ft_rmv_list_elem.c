@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_rmv_var_elem.c                                .::    .:/ .      .::   */
+/*   ft_rmv_list_elem.c                               .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/03/14 07:26:29 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/17 13:06:35 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Created: 2019/03/17 13:07:08 by shthevak     #+#   ##    ##    #+#       */
+/*   Updated: 2019/03/17 13:20:44 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -23,28 +23,28 @@ static int		ft_strcmp(const char *s1, const char *s2)
 	return ((unsigned char)*s1 - (unsigned char)*s2);
 }
 
-void			ft_rmv_var_elem(char *str, t_var **envir)
+void			ft_rmv_list_elem(char *str, t_list **alist)
 {
-	t_var *list;
-	t_var *tmp;
+	t_list *list;
+	t_list *tmp;
 
-	list = *envir;
-	if (ft_strcmp(str, list->var) == 0)
+	list = *alist;
+	if (ft_strcmp(str, list->content) == 0)
 	{
-		(*envir) = (*envir)->next;
+		(*alist) = (*alist)->next;
 		list->next = NULL;
-		ft_free_var_list(&list);
+		ft_free_list(&list);
 		return ;
 	}
 	list = list->next;
-	tmp = *envir;
+	tmp = *alist;
 	while (list)
 	{
-		if (ft_strcmp(str, list->var) == 0)
+		if (ft_strcmp(str, list->content) == 0)
 		{
 			tmp->next = list->next;
 			list->next = NULL;
-			ft_free_var_list(&list);
+			ft_free_list(&list);
 			break ;
 		}
 		tmp = tmp->next;

@@ -6,7 +6,7 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/13 21:42:15 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/15 17:00:18 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/17 16:19:52 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -16,7 +16,7 @@
 
 # include <sys/ioctl.h>
 # include <unistd.h>
-# include <sys/types.h> 
+# include <sys/types.h>
 # include <sys/wait.h>
 
 int ft_terminal_h(int ft);

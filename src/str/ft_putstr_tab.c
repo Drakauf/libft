@@ -6,23 +6,23 @@
 /*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/03 15:00:52 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/07 16:28:40 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/03/18 15:32:53 by shthevak    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "ft_str.h"
 
-void	ft_puttab2d(const char **tab)
+void	ft_putstr_tab(char **tab)
 {
 	int i;
 
 	i = 0;
 	if (tab == NULL)
 		return ;
-	while (*tab)
+	while (tab[i])
 	{
-		ft_putendl(*tab);
-		(*tab)++;
+		ft_putendl(tab[i]);
+		i++;
 	}
 }

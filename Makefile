@@ -93,7 +93,7 @@ LINC = $(addprefix $(INC_PATH), $(LINC_NAME))
 # **************************************************************************** #
 
 ifndef LFLAG
-	LFLAG = -Wall -Werror -Wexta
+	LFLAG = -Wall -Werror -Wextra -O3
 endif
 
 # **************************************************************************** #

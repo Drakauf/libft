@@ -6,7 +6,7 @@
 #    By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2019/02/25 12:55:34 by shthevak     #+#   ##    ##    #+#        #
-#    Updated: 2019/03/18 15:47:08 by shthevak    ###    #+. /#+    ###.fr      #
+#    Updated: 2019/03/23 16:29:56 by shthevak    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -36,6 +36,10 @@ IOBJ_PATH = $(addprefix $(OBJ_PATH), int/)
 LSRC_PATH = $(addprefix $(SRC_PATH), list/)
 LOBJ_PATH = $(addprefix $(OBJ_PATH), list/)
 
+MSRC_PATH = $(addprefix $(SRC_PATH), mem/)
+MOBJ_PATH = $(addprefix $(OBJ_PATH), mem/)
+
+
 # **************************************************************************** #
 # 									SRCS                                       #
 # **************************************************************************** #
@@ -47,7 +51,7 @@ SSRC_NAME = ft_bzero.c ft_isalpha.c ft_isascii.c ft_itoa.c ft_itoa_base.c\
 			ft_strcpy.c ft_strdel.c ft_strdup.c ft_strequ.c ft_strjoin.c\
 			ft_strjoin_free.c ft_strjoin_insert.c ft_strlen.c ft_strnew.c\
 			ft_strstr.c ft_strsub.c ft_voidrev.c ft_voidswap.c ft_put_space.c\
-			ft_strsplit.c ft_free_tab.c get_next_line.c 
+			ft_strsplit.c ft_free_tab.c get_next_line.c  
 
 UINC_NAME = ft_unix.h
 USRC_NAME = ft_terminal_h.c ft_terminal_w.c ft_file_exists.c ft_create_file.c\
@@ -66,6 +70,11 @@ LSRC_NAME = ft_create_var_str_elem.c ft_add_var_elem.c ft_print_var_list.c\
 			ft_change_var_str.c ft_rmv_var_elem.c ft_free_var_list.c\
 			ft_add_list_elem.c ft_create_list_elem.c ft_free_list.c\
 			ft_print_list.c ft_rmv_list_elem.c
+
+MINC_NAME = ft_mem.h
+MSRC_NAME = ft_memset.c ft_memccpy.c ft_memchr.c ft_memcmp.c ft_memcpy.c\
+			ft_memdel.c ft_memmove.c
+
 
 # **************************************************************************** #
 #  									VAR                                        #
@@ -88,6 +97,11 @@ LOBJ = $(addprefix $(LOBJ_PATH), $(LOBJ_NAME))
 LINC = $(addprefix $(INC_PATH), $(LINC_NAME))
 
 
+MOBJ_NAME = $(MSRC_NAME:.c=.o)
+MOBJ = $(addprefix $(MOBJ_PATH), $(MOBJ_NAME))
+MINC = $(addprefix $(INC_PATH), $(MINC_NAME))
+
+
 # **************************************************************************** #
 #  									FLAG                                       #
 # **************************************************************************** #
@@ -102,8 +116,8 @@ endif
 
 all : $(OBJ_PATH) $(NAME)
 
-$(NAME): $(SOBJ) $(UOBJ) $(IOBJ) $(LOBJ)
-	@ar rcs $(NAME) $(SOBJ) $(UOBJ) $(IOBJ) $(LOBJ)
+$(NAME): $(SOBJ) $(UOBJ) $(IOBJ) $(LOBJ) $(MOBJ)
+	@ar rcs $(NAME) $(SOBJ) $(UOBJ) $(IOBJ) $(LOBJ) $(MOBJ)
 
 $(OBJ_PATH):
 	@mkdir -p $(OBJ_PATH) 2> /dev/null
@@ -111,6 +125,7 @@ $(OBJ_PATH):
 	@mkdir -p $(UOBJ_PATH) 2> /dev/null
 	@mkdir -p $(IOBJ_PATH) 2> /dev/null
 	@mkdir -p $(LOBJ_PATH) 2> /dev/null
+	@mkdir -p $(MOBJ_PATH) 2> /dev/null
 
 $(SOBJ_PATH)%.o: $(SSRC_PATH)%.c $(SINC)
 	@gcc $(FLAGS) -I $(INC_PATH) -o $@ -c $<
@@ -122,6 +137,9 @@ $(IOBJ_PATH)%.o: $(ISRC_PATH)%.c $(IINC)
 	@gcc $(FLAGS) -I $(INC_PATH) -o $@ -c $<
 	
 $(LOBJ_PATH)%.o: $(LSRC_PATH)%.c $(LINC)
+	@gcc $(FLAGS) -I $(INC_PATH) -o $@ -c $<
+
+$(MOBJ_PATH)%.o: $(MSRC_PATH)%.c $(MINC)
 	@gcc $(FLAGS) -I $(INC_PATH) -o $@ -c $<
 
 clean: 

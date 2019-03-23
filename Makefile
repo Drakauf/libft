@@ -6,7 +6,7 @@
 #    By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2019/02/25 12:55:34 by shthevak     #+#   ##    ##    #+#        #
-#    Updated: 2019/03/23 16:29:56 by shthevak    ###    #+. /#+    ###.fr      #
+#    Updated: 2019/03/23 17:51:58 by shthevak    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -69,7 +69,7 @@ LINC_NAME = ft_list.h
 LSRC_NAME = ft_create_var_str_elem.c ft_add_var_elem.c ft_print_var_list.c\
 			ft_change_var_str.c ft_rmv_var_elem.c ft_free_var_list.c\
 			ft_add_list_elem.c ft_create_list_elem.c ft_free_list.c\
-			ft_print_list.c ft_rmv_list_elem.c
+			ft_print_list.c ft_rmv_list_elem.c ft_get_val.c ft_is_var.c
 
 MINC_NAME = ft_mem.h
 MSRC_NAME = ft_memset.c ft_memccpy.c ft_memchr.c ft_memcmp.c ft_memcpy.c\

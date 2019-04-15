@@ -6,7 +6,7 @@
 /*   By: mjalenqu <mjalenqu@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/03 15:18:39 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/04/15 11:40:44 by mjalenqu    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/04/15 13:18:19 by mjalenqu    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -45,6 +45,7 @@ void				ft_putstr_fd(const char *s, int fd);
 void				ft_putstr_tab(char **tabe);
 char				*ft_strcat(char *dest, char *src);
 int					ft_strcmp(const char *s1, const char *s2);
+int					ft_strncmp(const char *s1, const char *s2, size_t n);
 char				*ft_strcpy(char *dest, const char *str);
 void				ft_strdel(char **str);
 char				*ft_strdup(char *str);

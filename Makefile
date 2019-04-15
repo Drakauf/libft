@@ -6,7 +6,7 @@
 #    By: mjalenqu <mjalenqu@student.le-101.fr>      +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2019/02/25 12:55:34 by shthevak     #+#   ##    ##    #+#        #
-#    Updated: 2019/04/15 11:40:32 by mjalenqu    ###    #+. /#+    ###.fr      #
+#    Updated: 2019/04/15 13:23:55 by mjalenqu    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -15,6 +15,13 @@
 
 NAME = libft.a
 
+BLUE=\033[0;38;5;123m
+LIGHT_PINK = \033[0;38;5;200m
+PINK = \033[0;38;5;198m
+DARK_BLUE = \033[0;38;5;110m
+GREEN = \033[0;38;5;111m
+LIGHT_GREEN = \033[1;38;5;121m
+FLASH_GREEN = \033[33;32m
 # **************************************************************************** #
 #									PATH                                       #
 # **************************************************************************** #
@@ -46,7 +53,7 @@ MOBJ_PATH = $(addprefix $(OBJ_PATH), mem/)
 
 SINC_NAME = ft_str.h
 SSRC_NAME = ft_bzero.c ft_isalpha.c ft_isascii.c ft_itoa.c ft_itoa_base.c\
-			ft_putchar.c ft_putchar_fd.c ft_putendl.c ft_putendl_fd.c\
+			ft_putchar.c ft_putchar_fd.c ft_putendl.c ft_putendl_fd.c ft_strncmp.c\
 			ft_putstr.c ft_putstr_fd.c ft_putstr_tab.c ft_str_remove_index.c ft_strcat.c ft_strcmp.c\
 			ft_strcpy.c ft_strdel.c ft_strdup.c ft_strequ.c ft_strjoin.c\
 			ft_strjoin_free.c ft_strjoin_insert.c ft_strlen.c ft_strnew.c\
@@ -107,7 +114,7 @@ MINC = $(addprefix $(INC_PATH), $(MINC_NAME))
 # **************************************************************************** #
 
 ifndef LFLAG
-	LFLAG = -Wall -Werror -Wextra -O3
+	LFLAG = -Wall -Werror -Wextra -g3
 endif
 
 # **************************************************************************** #
@@ -118,6 +125,7 @@ all : $(OBJ_PATH) $(NAME)
 
 $(NAME): $(SOBJ) $(UOBJ) $(IOBJ) $(LOBJ) $(MOBJ)
 	@ar rcs $(NAME) $(SOBJ) $(UOBJ) $(IOBJ) $(LOBJ) $(MOBJ)
+	@echo "\n\033[0m"
 
 $(OBJ_PATH):
 	@mkdir -p $(OBJ_PATH) 2> /dev/null
@@ -129,18 +137,23 @@ $(OBJ_PATH):
 
 $(SOBJ_PATH)%.o: $(SSRC_PATH)%.c $(SINC)
 	@gcc $(FLAGS) -I $(INC_PATH) -o $@ -c $<
+	@echo "$(BLUE).\c"
 
 $(UOBJ_PATH)%.o: $(USRC_PATH)%.c $(UINC)
 	@gcc $(FLAGS) -I $(INC_PATH) -o $@ -c $<
+	@echo "$(BLUE).\c"
 
 $(IOBJ_PATH)%.o: $(ISRC_PATH)%.c $(IINC)
 	@gcc $(FLAGS) -I $(INC_PATH) -o $@ -c $<
+	@echo "$(BLUE).\c"
 	
 $(LOBJ_PATH)%.o: $(LSRC_PATH)%.c $(LINC)
 	@gcc $(FLAGS) -I $(INC_PATH) -o $@ -c $<
+	@echo "$(BLUE).\c"
 
 $(MOBJ_PATH)%.o: $(MSRC_PATH)%.c $(MINC)
 	@gcc $(FLAGS) -I $(INC_PATH) -o $@ -c $<
+	@echo "$(BLUE).\c"
 
 clean: 
 	@rm -rf $(OBJ_PATH)

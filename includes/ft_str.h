@@ -6,7 +6,7 @@
 /*   By: mjalenqu <mjalenqu@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/03 15:18:39 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/04/15 09:27:11 by mjalenqu    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/04/15 11:40:44 by mjalenqu    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -65,4 +65,5 @@ void				ft_put_space(int i);
 char				**ft_strsplit(const char *str, char c);
 void				ft_free_tab(char **tabe);
 int					get_next_line(int fd, char **line);
+void				*ft_memset(void *mem, int c, size_t l);
 #endif

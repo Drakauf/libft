@@ -3,10 +3,10 @@
 /*                                                              /             */
 /*   ft_str.h                                         .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
+/*   By: mjalenqu <mjalenqu@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/03 15:18:39 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/18 15:30:25 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/04/15 09:27:11 by mjalenqu    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -42,7 +42,7 @@ void				ft_putendl(const char *s);
 void				ft_putendl_fd(const char *s, int fd);
 void				ft_putstr(const char *s);
 void				ft_putstr_fd(const char *s, int fd);
-void				ft_putstr_tab(char **tab);
+void				ft_putstr_tab(char **tabe);
 char				*ft_strcat(char *dest, char *src);
 int					ft_strcmp(const char *s1, const char *s2);
 char				*ft_strcpy(char *dest, const char *str);
@@ -59,9 +59,10 @@ char				*ft_strstr(const char *str, const char *tofind);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
 void				*ft_voidrev(void *s);
 void				ft_voidswap(void *s, void *d);
-
+void				ft_putcolor(char *s1, char *s2, char *s3);
+void				ft_putcolor2(char *s1, char *s2, char *s3, char *s4);
 void				ft_put_space(int i);
 char				**ft_strsplit(const char *str, char c);
-void				ft_free_tab(char **tab);
+void				ft_free_tab(char **tabe);
 int					get_next_line(int fd, char **line);
 #endif

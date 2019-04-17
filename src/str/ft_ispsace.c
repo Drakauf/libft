@@ -1,28 +1,21 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_strjoin.c                                     .::    .:/ .      .::   */
+/*   ft_ispsace.c                                     .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: mjalenqu <mjalenqu@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2019/03/02 11:03:25 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/04/16 13:02:40 by mjalenqu    ###    #+. /#+    ###.fr     */
+/*   Created: 2019/04/16 12:53:23 by mjalenqu     #+#   ##    ##    #+#       */
+/*   Updated: 2019/04/16 12:57:13 by mjalenqu    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "ft_str.h"
 
-char	*ft_strjoin(const char *s1, const char *s2)
+int		is_space(char c)
 {
-	int		i;
-	char	*ret;
-
-	i = 0;
-	if (!(ret = malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1))))
-		return (NULL);
-	ret[0] = '\0';
-	ret = ft_strcat(ret, (char *)s1);
-	ret = ft_strcat(ret, (char *)s2);
-	return (ret);
+	if (c != '\0' && (c == ' ' || c == '\t'))
+		return (1);
+	return (0);
 }

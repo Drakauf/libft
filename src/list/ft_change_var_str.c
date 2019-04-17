@@ -3,10 +3,10 @@
 /*                                                              /             */
 /*   ft_change_var_str.c                              .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: shthevak <marvin@le-101.fr>                +:+   +:    +:    +:+     */
+/*   By: mjalenqu <mjalenqu@student.le-101.fr>      +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/03/14 07:10:40 by shthevak     #+#   ##    ##    #+#       */
-/*   Updated: 2019/03/14 09:24:52 by shthevak    ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/04/16 13:06:37 by mjalenqu    ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -55,9 +55,7 @@ static char	*ft_strdup(char *str)
 void		ft_change_env_str(char *var, char *val, t_var **env)
 {
 	t_var		*list;
-	t_var		*nlist;
 	int			i;
-	char		**new;
 
 	list = *env;
 	i = 0;

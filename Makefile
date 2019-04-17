@@ -6,7 +6,7 @@
 #    By: mjalenqu <mjalenqu@student.le-101.fr>      +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2019/02/25 12:55:34 by shthevak     #+#   ##    ##    #+#        #
-#    Updated: 2019/04/15 13:23:55 by mjalenqu    ###    #+. /#+    ###.fr      #
+#    Updated: 2019/04/17 14:57:54 by mjalenqu    ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -21,6 +21,7 @@ PINK = \033[0;38;5;198m
 DARK_BLUE = \033[0;38;5;110m
 GREEN = \033[0;38;5;111m
 LIGHT_GREEN = \033[1;38;5;121m
+LIGHT_RED = \033[1;31;5;121m
 FLASH_GREEN = \033[33;32m
 # **************************************************************************** #
 #									PATH                                       #
@@ -58,7 +59,7 @@ SSRC_NAME = ft_bzero.c ft_isalpha.c ft_isascii.c ft_itoa.c ft_itoa_base.c\
 			ft_strcpy.c ft_strdel.c ft_strdup.c ft_strequ.c ft_strjoin.c\
 			ft_strjoin_free.c ft_strjoin_insert.c ft_strlen.c ft_strnew.c\
 			ft_strstr.c ft_strsub.c ft_voidrev.c ft_voidswap.c ft_put_space.c\
-			ft_strsplit.c ft_free_tab.c get_next_line.c ft_putcolor.c ft_putcolor2.c
+			ft_strsplit.c ft_free_tab.c get_next_line.c ft_putcolor.c ft_putcolor2.c ft_ispsace.c
 
 UINC_NAME = ft_unix.h
 USRC_NAME = ft_terminal_h.c ft_terminal_w.c ft_file_exists.c ft_create_file.c\
@@ -113,8 +114,8 @@ MINC = $(addprefix $(INC_PATH), $(MINC_NAME))
 #  									FLAG                                       #
 # **************************************************************************** #
 
-ifndef LFLAG
-	LFLAG = -Wall -Werror -Wextra -g3
+ifndef FLAGS
+	FLAGS = -Wall -Werror -Wextra -g3
 endif
 
 # **************************************************************************** #
@@ -137,23 +138,23 @@ $(OBJ_PATH):
 
 $(SOBJ_PATH)%.o: $(SSRC_PATH)%.c $(SINC)
 	@gcc $(FLAGS) -I $(INC_PATH) -o $@ -c $<
-	@echo "$(BLUE).\c"
+	@echo "$(LIGHT_RED).\c"
 
 $(UOBJ_PATH)%.o: $(USRC_PATH)%.c $(UINC)
 	@gcc $(FLAGS) -I $(INC_PATH) -o $@ -c $<
-	@echo "$(BLUE).\c"
+	@echo "$(LIGHT_RED).\c"
 
 $(IOBJ_PATH)%.o: $(ISRC_PATH)%.c $(IINC)
 	@gcc $(FLAGS) -I $(INC_PATH) -o $@ -c $<
-	@echo "$(BLUE).\c"
+	@echo "$(LIGHT_RED).\c"
 	
 $(LOBJ_PATH)%.o: $(LSRC_PATH)%.c $(LINC)
 	@gcc $(FLAGS) -I $(INC_PATH) -o $@ -c $<
-	@echo "$(BLUE).\c"
+	@echo "$(LIGHT_RED).\c"
 
 $(MOBJ_PATH)%.o: $(MSRC_PATH)%.c $(MINC)
 	@gcc $(FLAGS) -I $(INC_PATH) -o $@ -c $<
-	@echo "$(BLUE).\c"
+	@echo "$(LIGHT_RED).\c"
 
 clean: 
 	@rm -rf $(OBJ_PATH)
